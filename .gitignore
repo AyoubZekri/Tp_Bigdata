@@ -1,0 +1,8 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Datasets
+TP2/data/
+*.csv
+!TP1/books.csv
