@@ -1,0 +1,10 @@
+
+services:
+  data-analysis:
+    image: zekriayoub19/tp04-bigdata:1.1
+    container_name: tp04-analysis
+    environment:
+      DATA_FILE: /app/data/traffic_data_2016.csv
+    volumes:
+      - ./data:/app/data:ro
+    restart: "no"
