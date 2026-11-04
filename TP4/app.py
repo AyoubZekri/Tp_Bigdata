@@ -8,7 +8,6 @@ CHUNK_SIZE = 100_000
 
 def main():
     print("=" * 60)
-    print("TP04 - BIG DATA ANALYSIS WITH DOCKER")
     print("CHUNKED CSV READING")
     print("=" * 60)
 
@@ -24,7 +23,7 @@ def main():
 
     print(f"\nDataset: {DATA_FILE}")
     print(f"Chunk size: {CHUNK_SIZE:,}")
-    print("\nReading dataset in chunks...")
+    print("\nReading...")
 
     for chunk_number, chunk in enumerate(
         pd.read_csv(DATA_FILE, chunksize=CHUNK_SIZE, low_memory=True),
@@ -75,7 +74,7 @@ def main():
     print("\nFirst 5 rows:")
     print(first_chunk.to_string(index=False))
 
-    print("\nAnalysis completed successfully.")
+    print("\nsuccessfully.")
 
 
 if __name__ == "__main__":
